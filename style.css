@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    background-color: skyblue;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+}
+.logo{
+    font-size: 25px;
+    position: relative;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    line-height:70px ;
+}
+ul{
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+
+}
+img.main_img{
+    width: 100%;
+    height: 300px;
+}
+.section1{
+padding-top: 70px;
+}
+.img_text{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    background-color: midnightblue;
+    /* padding-right:40px ;
+    padding-left: 40px; */
+    padding: 50px 150px;
+    margin: 250px;
+    align-content: center;
+    border-radius: 20px;
+}
+.h3{
+    position: absolute;
+    font-weight: bold;
+    padding: 20px;
+    margin: auto;
+    background-color: mintcream;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.welcome_img{
+    width: 100%;
+    height: 260px;
+}
+.container{
+    padding-top: 160px;
+    position: absolute;
+}
+
+.teachers{
+   margin-top: 480px; 
+   margin-bottom: 30px; 
+   text-align: center;
+}
+.teacher{
+    width: 90%;
+    height: 200px;
+    margin-left: 10px;
+}
+.teacher1{
+        width: 90%;
+        height: 200px;
+        margin-left: 10px;
+
+}
+.p{
+    margin-left: 10px;
+
+}
+.Add-form{
+    padding-top: 50px;
+}
+.label_text{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    
+}
+.input_deg{
+    width: 30%;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid blue;
+}
+.adm_int{
+    padding-top: 20px;
+}
+
+.input_text{
+    width: 30%;
+    height: 120px;
+    border-radius: 25px;
+    border: 1px solid blue;
+    
+}
+.btn{
+    margin-left: 130px;
+}
+#submit{
+    position: relative;
+    width: 15%;
+    left: 5%;
+
+}
+footer{
+    margin-top: 60px;
+    color: gray;
+    text-align: center;
+    width: 100%;
+}
+
+/* LOGIN.PHP */
+.login_body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+.form_deg{
+    padding-top: 200px;
+    text-align: center;
+}
+
+.label_deg{
+    display:inline-block;
+    color: skyblue;
+    width: 100px;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    
+}
+.login_form{
+    background-color: midnightblue;
+    width:500px;
+    padding-top: 70px;
+    padding-bottom:50px;
+    margin-left: 380px;
+    padding-right: 70px;
+    border-radius: 6px;
+    text-align: center;
+} 
+.btn{
+    padding-top: 90px;
+    color: skyblue;
+
+}
+.login_Title{
+    background-color:  #0d6efd;
+    width:500px;
+    padding-top: 10px;
+    margin-left: 380px;
+    border-radius: 6px;
+}
+
+
+
