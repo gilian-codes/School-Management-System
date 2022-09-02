@@ -27,10 +27,14 @@ session_start();
        //submit button
        if(isset($_POST['update_profile'])){
            $email=$_POST['email'];
-           $email=$_POST['phone'];
-           $email=$_POST['password'];
-
-           $sql2 = "UPDATE user SET email ='$email',phone='$phone', password='$password'
+           $phone=$_POST['phone'];
+           $password=$_POST['password'];
+           $grade=$_POST['grade'];
+           $subject=$_POST['subject'];
+           $score=$_POST['score'];
+           
+              //update the data in the database
+           $sql2 = "UPDATE user SET email ='$email',phone='$phone', password='$password', grade='$grade', subject='$subject', score='$score'
            WHERE username='$name' ";
 
            $result2=mysqli_query($conn,$sql2);
@@ -103,6 +107,11 @@ session_start();
                 <label>Password</label>
                 <input type="password" name="password" value="<?php  echo "{$info['password']}"?>"> 
             </div>
+
+               <div>
+                  <label>Subject</label>
+                  <input type="text" name="subject" value="<?php  echo "{$info['subject']}"?>"> 
+                </div>
             
             <div class="btn">
                 <input class="btn btn-primary" type="submit" name="update_profile" value="submit"> 
