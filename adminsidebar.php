@@ -20,14 +20,6 @@
             <li>
                 <a href="http://localhost:8080/SCHOOL/view_student.php/">View Student</a>
             </li>
-
-            <li>
-                <a href="">Add Courses</a>
-            </li>
-
-            <li>
-                <a href="">View Courses</a>
-            </li>
          </ul>
 
     </aside>

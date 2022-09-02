@@ -1,5 +1,5 @@
 <?php 
-//enables us to always login before directed to the admin page
+//enables us to always login before directing us  to the admin page
 session_start();
       
      if(!isset($_SESSION['username']))

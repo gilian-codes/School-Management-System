@@ -22,6 +22,8 @@ session_start();
 
     $result = mysqli_query($conn,$sql);
 
+    // $mysqli -> close();
+
 ?>
 
 

@@ -1,5 +1,5 @@
 <?php 
-//enables us to always login before direcrinf us to the admin page
+//enables us to always login before directing us to the admin page
 session_start();
       
      if(!isset($_SESSION['username']))
@@ -25,6 +25,10 @@ session_start();
               $user_email=$_POST['email'];
               $user_phone=$_POST['phone'];
               $user_password=$_POST['password'];
+              $user_matricule=$_POST['matricule'];
+              $user_subject=$_POST['subject'];
+              $user_score=$_POST['score'];
+              $user_grade=$_POST['grade'];
               $usertype="student";
 
               //if the user name exist or not
@@ -42,7 +46,7 @@ session_start();
 
                  else {
         
-                 $sql="INSERT INTO user(username,email,phone,usertype,password) VALUES ('$username','$user_email','$user_phone','$usertype','$user_password')";
+                 $sql="INSERT INTO user(username,email,phone,usertype,password,matricule,grade,subject,score) VALUES ('$username','$user_email','$user_phone','$usertype','$user_password','$user_matricule','$user_grade','$user_subject','$user_score')";
 
                  $result = mysqli_query($conn,$sql);
 
@@ -123,6 +127,33 @@ session_start();
                     <label>Password</label>
                     <input type="password" id="password" name="password" minlength="8" required>
                 </div>
+
+                <div>
+                    <label>Matricule</label>
+                    <input type="text" id="matricule" name="matricule" minlength="8" required>
+                </div>
+
+                <div>
+                    <label>Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div>
+                    <label>Score</label>
+                    <input type="number" id="score" name="score" required>
+                </div>
+
+                <div>
+                    <label>Grade</label>
+                          <select name="grade" id="grade">
+                             <option value="grade1">1</option></option>
+                             <option value="grade2">2</option>
+                             <option value="grade3">3</option>
+                             <option value="grade4">4</option>
+                             <option value="grade5">5</option>
+                             <option value="grade6">6</option>
+                          </select>
+               </div>
 
                 <div>
                     <input type="submit" class="btn btn-primary" name="add_student" value="Add Student">

@@ -15,11 +15,7 @@
             </li>
 
             <li>
-                <a href="">Add Courses</a>
-            </li>
-
-            <li>
-                <a href="">View Courses</a>
+                <a href="">View Profile</a>
             </li>
 
             <li>

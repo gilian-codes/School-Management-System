@@ -20,7 +20,7 @@ session_start();
 
     $id =$_GET['student_id'];
 
-    $sql ="SELECT * FROM user WHERE id='$id' ";
+    $sql ="SELECT * FROM user WHERE id='$id'";
 
     $result=mysqli_query($conn,$sql);
 
@@ -31,9 +31,13 @@ session_start();
         $name=$_POST['name'];
         $email=$_POST['email'];
         $password=$_POST['password'];
+        $password=$_POST['matricule'];
+        $email=$_POST['grade'];
+        $email=$_POST['subject'];
+        $email=$_POST['score'];
         $phone=$_POST['phone'];
 
-        $query="UPDATE user SET username='$name',email='$email', phone='$phone',password='$password' WHERE id='$id'";
+        $query="UPDATE user SET username='$name',email='$email', phone='$phone',password='$password',matricule='$matricule',grade='$grade',subject='$subject',score='$score' WHERE id='$id'";
 
         $result2= mysqli_query($conn,$query);
 
@@ -85,22 +89,46 @@ session_start();
             <form action="#" method="POST"> 
                 <div>
                     <label>Username</label>
-                    <input type ="text" name="name" value=<?php  echo "{$info['username']}";?>
+                    <input type ="text" name="name" value=<?php  echo "{$info['username']}";?>/>
                 </div>
-
+                
+ 
                 <div>
                     <label>Email</label>
-                    <input type ="email" name="email" value=<?php  echo "{$info['email']}";?>>
+                    <input type ="email" name="email" value=<?php  echo "{$info['email']}";?>/>
                 </div>
 
                 <div>
                     <label>Phone</label>
-                    <input type ="number" name="phone" value=<?php  echo "{$info['phone']}";?>>
+                    <input type ="number" name="phone" value=<?php  echo "{$info['phone']}";?>/>
                 </div>
 
                 <div>
-                    <label>password</label>
-                    <input type ="password" name="password" value=<?php  echo "{$info['password']}";?>>
+                    <label>Password</label>
+                    <input type ="password" name="password" value=<?php  echo "{$info['password']}";?>/>
+                </div>
+
+                <div>
+                    <label>Matricule</label>
+                    <input type="text" name="matricule" value=<?php echo "{$info['matricule']}";?>/>
+                </div>
+
+                
+                <div>
+                    <label>Grade</label>
+                    <input type ="number" name="grade" value=<?php  echo "{$info['grade']}";?>/>
+                </div>
+
+                
+                <div>
+                    <label>Subject</label>
+                    <input type ="text" name="subject" value=<?php  echo "{$info['subject']}";?>/>
+                </div>
+
+                
+                <div>
+                    <label>Score</label>
+                    <input type ="number" name="score" value=<?php  echo "{$info['score']}";?>/>
                 </div>
 
                 <div>

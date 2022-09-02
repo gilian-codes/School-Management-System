@@ -87,6 +87,10 @@ session_start();
                 <th class="table_th">Email</th>
                 <th  class="table_th">Phone</th>
                 <th  class="table_th">Password</th>
+                <th  class="table_th">Matricule</th>
+                <th  class="table_th">Grade</th>
+                <th  class="table_th">Subject</th>
+                <th  class="table_th">Score</th>
                 <th  class="table_th">Delete</th>
                 <th  class="table_th">Update</th>
             </tr>
@@ -108,6 +112,19 @@ session_start();
                 <td class="table_td">
                     <?php  echo "{$info['password']}"?>
                 </td>
+                <td class="table_td">
+                    <?php  echo "{$info['matricule']}"?>
+                </td>
+                <td class="table_td">
+                    <?php  echo "{$info['grade']}"?>
+                </td>
+                <td class="table_td">
+                    <?php  echo "{$info['subject']}"?>
+                </td>
+                <td class="table_td">
+                    <?php  echo "{$info['score']}"?>
+                </td>
+
 
                 <td class="table_td">
                     <?php  echo " <a  onClick=\" javascript:return confirm('Are you sure you want to delete this'); \" 
